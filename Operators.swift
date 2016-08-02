@@ -19,12 +19,12 @@ precedence 171
 
 
 public func +<A:ValueProtocol, B:ValueProtocol>(l: A, r: B) -> Value {
-	assert(l.dim == r.dim, "Dimension mismatch: [\(l.dim)] vs [\(r.dim)]")
+	assert(l.dim == r.dim, "Dimension mismatch: \(l.dim) vs \(r.dim)")
 	return Value(value: l.value + r.value, dim: l.dim)
 }
 
 public func -<A:ValueProtocol, B:ValueProtocol>(l: A, r: B) -> Value {
-	assert(l.dim == r.dim, "Dimension mismatch: [\(l.dim)] vs [\(r.dim)]")
+	assert(l.dim == r.dim, "Dimension mismatch: \(l.dim) vs \(r.dim)")
 	return Value(value: l.value - r.value, dim: l.dim)
 }
 

@@ -16,6 +16,7 @@ public enum Units {
 	public static let cd = Dim(J: 1).unit
 
 	public static let g = Pre.m * kg
+	public static let cm = Pre.c * m
 }
 
 extension Units {
@@ -34,8 +35,14 @@ extension Units {
 		public static let hour = 60 * min
 	}
 	
+	public enum Length {
+		public static let cm = Pre.c * m
+		public static let mile = 1.60934 * Pre.k * m
+	}
+	
 	public enum Constants {
 		public static let c = 299792458 * m / s
+		public static let g = 9.80665 * m / s ** 2
 	}
 }
 

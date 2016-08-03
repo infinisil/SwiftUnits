@@ -324,6 +324,7 @@
 				B6CAEE4F1D4D7B1400FAFBAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

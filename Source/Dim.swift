@@ -9,7 +9,7 @@
 
 
 public struct Dim : CustomStringConvertible, Equatable {
-	public let L, M, T, I, O, N, J: Int8
+	public let L, M, T, I, Θ, N, J: Int8
 	
 	private static let unitStrings = ["m", "kg", "s", "A", "K", "mol", "cd"]
 	
@@ -19,7 +19,7 @@ public struct Dim : CustomStringConvertible, Equatable {
 	public static let kg = Dim(M: 1)
 	public static let s = Dim(T: 1)
 	public static let A = Dim(I: 1)
-	public static let K = Dim(O: 1)
+	public static let K = Dim(Θ: 1)
 	public static let mol = Dim(N: 1)
 	public static let cd = Dim(J: 1)
 	
@@ -27,18 +27,18 @@ public struct Dim : CustomStringConvertible, Equatable {
 		return self == Dim()
 	}
 	
-	public init(L: Int8 = 0, M: Int8 = 0, T: Int8 = 0, I: Int8 = 0, O: Int8 = 0, N: Int8 = 0, J: Int8 = 0) {
+	public init(L: Int8 = 0, M: Int8 = 0, T: Int8 = 0, I: Int8 = 0, Θ: Int8 = 0, N: Int8 = 0, J: Int8 = 0) {
 		self.L = L
 		self.M = M
 		self.T = T
 		self.I = I
-		self.O = O
+		self.Θ = Θ
 		self.N = N
 		self.J = J
 	}
 	
 	public var description: String {
-		let values = zip(Dim.unitStrings, [L, M, T, I, O, N, J]).filter{ $1 != 0 }
+		let values = zip(Dim.unitStrings, [L, M, T, I, Θ, N, J]).filter{ $1 != 0 }
 		
 		if values.isEmpty {
 			return "[]"
@@ -64,7 +64,7 @@ public func ==(l: Dim, r: Dim) -> Bool {
 		&& l.T == r.T
 		&& l.I == r.I
 	
-	let b = l.O == r.O
+	let b = l.Θ == r.Θ
 		&& l.N == r.N
 		&& l.J == r.J
 	
@@ -78,7 +78,7 @@ private func toDim(f: (Int8, Int8) -> Int8) -> (Dim, Dim) -> Dim {
 			M: f(l.M, r.M),
 			T: f(l.T, r.T),
 			I: f(l.I, r.I),
-			O: f(l.O, r.O),
+			Θ: f(l.Θ, r.Θ),
 			N: f(l.N, r.N),
 			J: f(l.J, r.J)
 		)
@@ -101,7 +101,7 @@ public func *(l: Dim, r: Int8) -> Dim {
 		M: l.M * r,
 		T: l.T * r,
 		I: l.I * r,
-		O: l.O * r,
+		Θ: l.Θ * r,
 		N: l.N * r,
 		J: l.J * r
 	)
@@ -113,7 +113,7 @@ public func /(l: Dim, r: Int8) -> Dim {
 		M: l.M / r,
 		T: l.T / r,
 		I: l.I / r,
-		O: l.O / r,
+		Θ: l.Θ / r,
 		N: l.N / r,
 		J: l.J / r
 	)
@@ -129,7 +129,7 @@ prefix func -(d: Dim) -> Dim {
 		M: -d.M,
 		T: -d.T,
 		I: -d.I,
-		O: -d.O,
+		Θ: -d.Θ,
 		N: -d.N,
 		J: -d.J
 	)

@@ -28,7 +28,7 @@ public enum Units {
 	/**
 	The standard SI unit 1 kelvin. Defined as the fraction 1/273.16 of the thermodynamic temperature of the triple point of water.[¹](http://www.bipm.org/en/publications/si-brochure/kelvin.html)
 	*/
-	public static let K = Dim(O: 1).unit
+	public static let K = Dim(Θ: 1).unit
 	/**
 	The standard SI unit 1 mol. Defined as the amount of substance of a system which contains as many elementary entities as there are atoms in 0.012 kilogram of carbon 12.[¹](http://www.bipm.org/en/publications/si-brochure/mole.html)
 	*/

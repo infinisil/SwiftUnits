@@ -14,30 +14,66 @@ public enum Units {
 	public static let K = Dim(O: 1).unit
 	public static let mol = Dim(N: 1).unit
 	public static let cd = Dim(J: 1).unit
-
-	public static let g = Pre.m * kg
-	public static let cm = Pre.c * m
 }
 
 extension Units {
 	public static let Hz = 1 / s
+	public static let rad = m / m
+	public static let sr = m ** 2 / m ** 2
 	public static let N = m * kg / s ** 2
 	public static let Pa = N / m ** 2
 	public static let J = N * m
 	public static let W = J / s
 	public static let C = A * s
+	public static let V = W / A
+	public static let F = C / V
+	public static let Ω = V / A
+	public static let S = A / V
+	public static let Wb = J / A
+	public static let T = V * s / m ** 2
+	public static let H = V * s / A
+	public static let lm = cd * sr
+	public static let sx = lm / m ** 2
+	public static let Bq = 1 / s
+	public static let Gy = J / kg
+	public static let Sv = J / kg
+	public static let kat = mol / s
 }
 
 extension Units {
-	public enum Duration {
+	public enum Length {
+		public static let m = Units.m
 		public static let cm = Pre.c * m
-		public static let min = 60 * s
-		public static let hour = 60 * min
+		
+		public static let `in` = 2.54 * cm
+		public static let ft = 12 * `in`
+		public static let yd = 3 * ft
+		
+		public static let mile = 1.60934 * Pre.k * m
+		
+		public static let ly = 9460730472580800 * m
+		public static let au = 149597870700 * m
+		public static let pc = 206264.81 * au
 	}
 	
-	public enum Length {
-		public static let cm = Pre.c * m
-		public static let mile = 1.60934 * Pre.k * m
+	public enum Mass {
+		public static let t = 1000 * kg
+		public static let u = 1.660539040e-27 * kg
+		
+		public static let lb = 0.45359237 * kg
+		public static let mp = 2.17651e-8 * kg
+		public static let Ms = 1.98855e30 * kg
+	}
+	
+	public enum Time {
+		public static let tp = 5.39116e-44 * s
+		
+		
+		public static let min = 60 * s
+		public static let hour = 60 * min
+		public static let day = 24 * hour
+		public static let week = 7 * day
+		public static let gregorianYear = 365.2425 * day
 	}
 	
 	public enum Constants {

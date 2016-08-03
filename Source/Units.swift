@@ -74,8 +74,8 @@ extension Units {
 		
 		public static let mile = 1.60934 * Pre.k * m
 		
-		public static let ly = 9460730472580800 * m
-		public static let AU = 149597870700 * m
+		public static let ly = 9.460730472580800e15 * m
+		public static let AU = 1.49597870700e11 * m
 		public static let pc = 206264.81 * AU
 		
 		public enum Uncommon {

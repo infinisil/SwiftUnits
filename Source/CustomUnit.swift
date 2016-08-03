@@ -22,6 +22,6 @@ public func *(l: Double, r: CustomUnit) -> Value {
 }
 
 public func /(l: Value, r: CustomUnit) -> Double {
-	guard l.dim == r.dim else { fatalError("Value has dimension \(l.dim), but unit has dimension \(r.dim)") }
+	assert(l.dim == r.dim, "Value has dimension \(l.dim), but unit has dimension \(r.dim)")
 	return r.to(l.value)
 }

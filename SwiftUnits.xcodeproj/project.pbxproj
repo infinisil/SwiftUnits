@@ -39,7 +39,6 @@
 		B60016671D524DAE004E4FD7 /* Ratio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE641D4D8F6C00FAFBAB /* Ratio.swift */; };
 		B60016681D524DAE004E4FD7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE541D4D7B2D00FAFBAB /* Utils.swift */; };
 		B60016691D524DAE004E4FD7 /* Dim.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE551D4D7B2D00FAFBAB /* Dim.swift */; };
-		B600166A1D524DAE004E4FD7 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE561D4D7B2D00FAFBAB /* Base.swift */; };
 		B600166B1D524DAE004E4FD7 /* CustomUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE571D4D7B2D00FAFBAB /* CustomUnit.swift */; };
 		B600166C1D524DAE004E4FD7 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE581D4D7B2D00FAFBAB /* Value.swift */; };
 		B600166D1D524DAE004E4FD7 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE591D4D7B2D00FAFBAB /* Units.swift */; };
@@ -48,7 +47,6 @@
 		B60016701D524DAE004E4FD7 /* Ratio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE641D4D8F6C00FAFBAB /* Ratio.swift */; };
 		B60016711D524DAE004E4FD7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE541D4D7B2D00FAFBAB /* Utils.swift */; };
 		B60016721D524DAE004E4FD7 /* Dim.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE551D4D7B2D00FAFBAB /* Dim.swift */; };
-		B60016731D524DAE004E4FD7 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE561D4D7B2D00FAFBAB /* Base.swift */; };
 		B60016741D524DAE004E4FD7 /* CustomUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE571D4D7B2D00FAFBAB /* CustomUnit.swift */; };
 		B60016751D524DAE004E4FD7 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE581D4D7B2D00FAFBAB /* Value.swift */; };
 		B60016761D524DAE004E4FD7 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE591D4D7B2D00FAFBAB /* Units.swift */; };
@@ -57,7 +55,6 @@
 		B60016791D524DAE004E4FD7 /* Ratio.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE641D4D8F6C00FAFBAB /* Ratio.swift */; };
 		B600167A1D524DAE004E4FD7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE541D4D7B2D00FAFBAB /* Utils.swift */; };
 		B600167B1D524DAE004E4FD7 /* Dim.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE551D4D7B2D00FAFBAB /* Dim.swift */; };
-		B600167C1D524DAE004E4FD7 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE561D4D7B2D00FAFBAB /* Base.swift */; };
 		B600167D1D524DAE004E4FD7 /* CustomUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE571D4D7B2D00FAFBAB /* CustomUnit.swift */; };
 		B600167E1D524DAE004E4FD7 /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE581D4D7B2D00FAFBAB /* Value.swift */; };
 		B600167F1D524DAE004E4FD7 /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE591D4D7B2D00FAFBAB /* Units.swift */; };
@@ -65,7 +62,6 @@
 		B6CAEE5B1D4D7B2D00FAFBAB /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE521D4D7B2D00FAFBAB /* Operators.swift */; };
 		B6CAEE5D1D4D7B2D00FAFBAB /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE541D4D7B2D00FAFBAB /* Utils.swift */; };
 		B6CAEE5E1D4D7B2D00FAFBAB /* Dim.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE551D4D7B2D00FAFBAB /* Dim.swift */; };
-		B6CAEE5F1D4D7B2D00FAFBAB /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE561D4D7B2D00FAFBAB /* Base.swift */; };
 		B6CAEE601D4D7B2D00FAFBAB /* CustomUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE571D4D7B2D00FAFBAB /* CustomUnit.swift */; };
 		B6CAEE611D4D7B2D00FAFBAB /* Value.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE581D4D7B2D00FAFBAB /* Value.swift */; };
 		B6CAEE621D4D7B2D00FAFBAB /* Units.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE591D4D7B2D00FAFBAB /* Units.swift */; };
@@ -145,7 +141,6 @@
 		B6CAEE521D4D7B2D00FAFBAB /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
 		B6CAEE541D4D7B2D00FAFBAB /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		B6CAEE551D4D7B2D00FAFBAB /* Dim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dim.swift; sourceTree = "<group>"; };
-		B6CAEE561D4D7B2D00FAFBAB /* Base.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
 		B6CAEE571D4D7B2D00FAFBAB /* CustomUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUnit.swift; sourceTree = "<group>"; };
 		B6CAEE581D4D7B2D00FAFBAB /* Value.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Value.swift; sourceTree = "<group>"; };
 		B6CAEE591D4D7B2D00FAFBAB /* Units.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Units.swift; sourceTree = "<group>"; };
@@ -274,7 +269,6 @@
 				B6CAEE641D4D8F6C00FAFBAB /* Ratio.swift */,
 				B6CAEE541D4D7B2D00FAFBAB /* Utils.swift */,
 				B6CAEE551D4D7B2D00FAFBAB /* Dim.swift */,
-				B6CAEE561D4D7B2D00FAFBAB /* Base.swift */,
 				B6CAEE571D4D7B2D00FAFBAB /* CustomUnit.swift */,
 				B6CAEE581D4D7B2D00FAFBAB /* Value.swift */,
 				B6CAEE591D4D7B2D00FAFBAB /* Units.swift */,
@@ -586,7 +580,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B600166A1D524DAE004E4FD7 /* Base.swift in Sources */,
 				B60016651D524DAE004E4FD7 /* Pre.swift in Sources */,
 				B600166B1D524DAE004E4FD7 /* CustomUnit.swift in Sources */,
 				B600166C1D524DAE004E4FD7 /* Value.swift in Sources */,
@@ -602,7 +595,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B60016731D524DAE004E4FD7 /* Base.swift in Sources */,
 				B600166E1D524DAE004E4FD7 /* Pre.swift in Sources */,
 				B60016741D524DAE004E4FD7 /* CustomUnit.swift in Sources */,
 				B60016751D524DAE004E4FD7 /* Value.swift in Sources */,
@@ -618,7 +610,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B600167C1D524DAE004E4FD7 /* Base.swift in Sources */,
 				B60016771D524DAE004E4FD7 /* Pre.swift in Sources */,
 				B600167D1D524DAE004E4FD7 /* CustomUnit.swift in Sources */,
 				B600167E1D524DAE004E4FD7 /* Value.swift in Sources */,
@@ -634,7 +625,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6CAEE5F1D4D7B2D00FAFBAB /* Base.swift in Sources */,
 				B6CAEE5A1D4D7B2D00FAFBAB /* Pre.swift in Sources */,
 				B6CAEE601D4D7B2D00FAFBAB /* CustomUnit.swift in Sources */,
 				B6CAEE611D4D7B2D00FAFBAB /* Value.swift in Sources */,

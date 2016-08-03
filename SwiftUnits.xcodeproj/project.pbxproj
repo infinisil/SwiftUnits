@@ -152,10 +152,10 @@
 			isa = PBXGroup;
 			children = (
 				B60016241D524A92004E4FD7 /* SwiftUnits.h */,
-				B68765B31D52498900236695 /* Info-iOS.plist */,
 				B6CAEE4C1D4D7B1400FAFBAB /* Info-macOS.plist */,
-				B68765B51D52499100236695 /* Info-tvOS.plist */,
+				B68765B31D52498900236695 /* Info-iOS.plist */,
 				B68765B61D52499100236695 /* Info-watchOS.plist */,
+				B68765B51D52499100236695 /* Info-tvOS.plist */,
 			);
 			name = "Supporting Files";
 			path = "SwiftUnits-macOS";

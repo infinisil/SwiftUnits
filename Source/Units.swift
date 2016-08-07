@@ -40,26 +40,47 @@ public enum Units {
 }
 
 extension Units {
+	/// Hertz (frequency)
 	public static let Hz = 1 / s
+	/// Radian (angle)
 	public static let rad = m / m
+	/// Steradian (Solid angle)
 	public static let sr = m ** 2 / m ** 2
+	/// Newton (force, weight)
 	public static let N = m * kg / s ** 2
+	/// Pascal (pressure, stress)
 	public static let Pa = N / m ** 2
+	/// Joule (energy, work, heat)
 	public static let J = N * m
+	/// Watt (power, radiant flux)
 	public static let W = J / s
+	/// Coulomb (electric charge, quantity of electricity)
 	public static let C = A * s
+	/// Volt (voltage, electrical potential difference, electromotive force)
 	public static let V = W / A
+	/// Farad (electrical capacitance)
 	public static let F = C / V
+	/// Ohm (electrical resistance, impendance, reactance)
 	public static let Ω = V / A
+	/// Siemens (electrical conductance)
 	public static let S = A / V
+	/// Weber (magnetic flux)
 	public static let Wb = J / A
+	/// Tesla (magnetic field strength, magnetic flux density)
 	public static let T = V * s / m ** 2
+	/// Henry (electrical inductance)
 	public static let H = V * s / A
+	/// Lumen (luminous flux)
 	public static let lm = cd * sr
-	public static let sx = lm / m ** 2
+	/// Lux (illuminance)
+	public static let lx = lm / m ** 2
+	/// Becquerel (radioactivity)
 	public static let Bq = 1 / s
+	/// Gray (absorbed dose)
 	public static let Gy = J / kg
+	/// Sievert (equivalent dose)
 	public static let Sv = J / kg
+	/// Katal (catalytic activity)
 	public static let kat = mol / s
 }
 
@@ -141,8 +162,29 @@ extension Units {
 
 extension Units {
 	public enum Constants {
+		public static let π = Value(value: M_PI)
+		
+		/// Speed of light (exact)
 		public static let c = 299792458 * m / s
-		public static let g = 9.80665 * m / s ** 2
+		/// Gravitational constant (std uncertainty 4.7e-5)
+		public static let G = 6.67408e-11 * m**3 / kg / s**2
+		/// Planck constant (std uncertainy 1.2e-8)
+		public static let h = 6.626070040e-34 * J / s
+		/// Reduced planck constant (std uncertainty 1.2e-8)
+		public static let ħ = 1.054571800e-34 * J / s
+		
+		/// Magnetic constant (exact)
+		public static let µ_0 = 4e-7 * π * N / A**2
+		/// Electric constant (exact)
+		public static let ε_0 = 1 / (µ_0 * c**2)
+		/// Characteristic impendance of vacuum (exact)
+		public static let Z_0 = µ_0 * c
+		/// Coulomb's constant (exact)
+		public static let k_e = 1 / (4 * π * ε_0)
+		
+		/// Elementary charge (std uncertainty 2.2e-8)
+		public static let e = 1.602176565e-19 * C
+		
 	}
 }
 

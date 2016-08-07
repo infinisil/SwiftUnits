@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Ratio : IntegerLiteralConvertible, CustomStringConvertible {
+public struct Ratio : IntegerLiteralConvertible, CustomStringConvertible, Equatable {
 	public let numerator : Int8
 	public let denominator : Int8
 	
@@ -38,4 +38,8 @@ public struct Ratio : IntegerLiteralConvertible, CustomStringConvertible {
 		numerator = value
 		denominator = 1
 	}
+}
+
+public func ==(l: Ratio, r: Ratio) -> Bool {
+	return l.numerator == r.numerator && l.denominator == r.denominator
 }

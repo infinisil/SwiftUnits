@@ -22,6 +22,6 @@ extension Int8 {
 		
 		if self < 0 { chars.append("⁻") }
 		
-		return String(chars.reverse())
+		return String(chars.reversed())
 	}
 }

@@ -11,8 +11,8 @@ public struct CustomUnit {
 	typealias Unit = Double
 	
 	let dim : Dim
-	let from : Unit -> Double
-	let to : Double -> Unit
+	let from : (Unit) -> Double
+	let to : (Double) -> Unit
 }
 
 

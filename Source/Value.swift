@@ -16,7 +16,7 @@ public struct Value : ValueProtocol, CustomStringConvertible {
 	public let value : Double
 	
 	public var description: String {
-		return ["\(value)", "\(dim)"].joinWithSeparator(" ")
+		return ["\(value)", "\(dim)"].joined(separator: " ")
 	}
 	
 	public init(value: Double, dim: Dim = Dim()) {

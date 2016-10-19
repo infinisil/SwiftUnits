@@ -11,7 +11,7 @@
 public struct Dim : CustomStringConvertible, Equatable {
 	public let L, M, T, I, Θ, N, J: Int8
 	
-	private static let unitStrings = ["m", "kg", "s", "A", "K", "mol", "cd"]
+	fileprivate static let unitStrings = ["m", "kg", "s", "A", "K", "mol", "cd"]
 	
 	public static let none = Dim()
 	
@@ -48,7 +48,7 @@ public struct Dim : CustomStringConvertible, Equatable {
 			u.0 + (u.1 != 1 ? u.1.superscript : "")
 		}
 		
-		return "[\(strings.joinWithSeparator(" "))]"
+		return "[\(strings.joined(separator: " "))]"
 	}
 }
 
@@ -71,7 +71,7 @@ public func ==(l: Dim, r: Dim) -> Bool {
 	return a && b
 }
 
-private func toDim(f: (Int8, Int8) -> Int8) -> (Dim, Dim) -> Dim {
+private func toDim(_ f: @escaping (Int8, Int8) -> Int8) -> (Dim, Dim) -> Dim {
 	return { l, r in
 		return Dim(
 			L: f(l.L, r.L),

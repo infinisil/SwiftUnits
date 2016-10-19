@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Ratio : IntegerLiteralConvertible, CustomStringConvertible, Equatable {
+public struct Ratio : ExpressibleByIntegerLiteral, CustomStringConvertible, Equatable {
 	public let numerator : Int8
 	public let denominator : Int8
 	

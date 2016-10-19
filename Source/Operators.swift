@@ -8,14 +8,13 @@
 
 import Darwin
 
-infix operator ** {
-precedence 170
+precedencegroup PowerPrecedence {
+	associativity: left
+	higherThan: MultiplicationPrecedence
 }
 
-infix operator %% {
-precedence 171
-}
-
+infix operator ** : PowerPrecedence
+infix operator %% : MultiplicationPrecedence
 
 /**
 Adds two values together.

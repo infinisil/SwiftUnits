@@ -6,18 +6,19 @@
 //
 //
 
+private let superscriptNumbers : [Character] =
+	["⁰", "¹", "²", "³", "⁴", "⁵", "⁶", "⁷", "⁸", "⁹"]
 
-
-extension Int8 {
-	static let superscriptNumbers : [Character] = ["⁰", "¹", "²", "³", "⁴", "⁵", "⁶", "⁷", "⁸", "⁹"]
-	
+extension IntegerArithmetic where Self : SignedNumber {
+	/// Converts a number to its superscript variant. (-42).superscript = "⁻⁴²"
 	public var superscript : String {
 		var n = self
 		var chars : [Character] = []
 		repeat {
 			let r = n % 10
 			n = n / 10
-			chars.append(Int8.superscriptNumbers[Int(abs(r))])
+			let index = Int(abs(r).toIntMax())
+			chars.append(superscriptNumbers[index])
 		} while n != 0
 		
 		if self < 0 { chars.append("⁻") }

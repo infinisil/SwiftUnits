@@ -1,7 +1,14 @@
 //: Playground - noun: a place where people can play
 
 import SwiftUnits
-import Foundation
+
+
+//10N + 4kg * 3cm / (23s)^2
+
+let a = (4 * Units.kg) * (Pre.k * 3 * Units.m)
+let b = a / (23 * Units.s) ** 2
+let c = 10 * Units.N + b
+
 
 let height = 1.80 * Units.m         // 1.8 [m]
 let weight = 70 * Units.kg          // 70.0 [kg]

@@ -61,6 +61,7 @@
 		B688CFFC1E71780100BC4151 /* SuperscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B688CFFB1E71780100BC4151 /* SuperscriptTests.swift */; };
 		B688CFFD1E71780A00BC4151 /* SuperscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B688CFFB1E71780100BC4151 /* SuperscriptTests.swift */; };
 		B688CFFE1E71780A00BC4151 /* SuperscriptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B688CFFB1E71780100BC4151 /* SuperscriptTests.swift */; };
+		B688D0001E717FCE00BC4151 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = B688CFFF1E717FCE00BC4151 /* README.md */; };
 		B6CAEE5A1D4D7B2D00FAFBAB /* Pre.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE511D4D7B2D00FAFBAB /* Pre.swift */; };
 		B6CAEE5B1D4D7B2D00FAFBAB /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE521D4D7B2D00FAFBAB /* Operators.swift */; };
 		B6CAEE5D1D4D7B2D00FAFBAB /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CAEE541D4D7B2D00FAFBAB /* Utils.swift */; };
@@ -136,6 +137,7 @@
 		B68765B51D52499100236695 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-tvOS.plist"; path = "Supporting Files/Info-tvOS.plist"; sourceTree = SOURCE_ROOT; };
 		B68765B61D52499100236695 /* Info-watchOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Info-watchOS.plist"; path = "Supporting Files/Info-watchOS.plist"; sourceTree = SOURCE_ROOT; };
 		B688CFFB1E71780100BC4151 /* SuperscriptTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuperscriptTests.swift; sourceTree = "<group>"; };
+		B688CFFF1E717FCE00BC4151 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
 		B6B41D4C1D5248E2009446D7 /* SwiftUnits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUnits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B41D591D5248EF009446D7 /* SwiftUnits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUnits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6B41D661D5248FB009446D7 /* SwiftUnits.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUnits.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,6 +233,7 @@
 		B6CAEE3B1D4D7AFA00FAFBAB = {
 			isa = PBXGroup;
 			children = (
+				B688CFFF1E717FCE00BC4151 /* README.md */,
 				B6CAEE631D4D7FD800FAFBAB /* Playground.playground */,
 				B6CAEE501D4D7B1C00FAFBAB /* Source */,
 				B6CAEE491D4D7B1400FAFBAB /* Supporting Files */,
@@ -644,6 +647,7 @@
 				B6CAEE5B1D4D7B2D00FAFBAB /* Operators.swift in Sources */,
 				B6CAEE5E1D4D7B2D00FAFBAB /* Dim.swift in Sources */,
 				B6CAEE5D1D4D7B2D00FAFBAB /* Utils.swift in Sources */,
+				B688D0001E717FCE00BC4151 /* README.md in Sources */,
 				B6CAEE651D4D8F6C00FAFBAB /* Ratio.swift in Sources */,
 				B6CAEE621D4D7B2D00FAFBAB /* Units.swift in Sources */,
 			);

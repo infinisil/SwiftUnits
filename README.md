@@ -52,5 +52,36 @@ let height = 1.3 * Units.m                                // 1.3 [m]
 let fallTime = (2 * height / Units.Constants.g) ** 1%%2   // 0.514904083664386 [s]
 ```
 
+## Philosophy
 
-[continuing...]
+Before this library got created, I experimented with encoding the dimension of units into the type system, so that all the checks could be done at compile-time. I quickly realized that Swift's type system is not nearly powerful enough to do this. Dependent types are only available in a [very limited fashion](https://bigonotetaking.wordpress.com/2015/09/06/yet-more-misunderstanding-of-dependent-types/) in Swift. In a language like [Idris](http://www.idris-lang.org) (which you should totally check out, it's awesome), this would indeed be possible because of its powerful type system.
+
+## Comparison with other libraries
+
+### Types
+
+There are currently three types of libraries, each having it's own pros and cons:
+
+#### Type 1: [SI](https://en.wikipedia.org/wiki/International_System_of_Units)-based
+
+Supports addition and multiplication with arbitrary values of any unit type. Calculations such as `10N + 4kg * 3cm / (23s)^2 = 32.68N` are possible, as each value has both a magnitude (number) and a dimension (e.g. Length^-1, Mass * Duration). In Swift it is not possible to verify that on addition the two values have the same dimension at compile-time.
+
+#### Type 2: [Quantity](https://en.wikipedia.org/wiki/Physical_quantity)-based
+
+Each quantity (e.g. Length, Velocity, Force, etc.) is represented as its own type, encapsulating conversion between units. This enables one to catch errors such as `1s + 3m` at compile-time by only defining addition on values with the same quantities. The drawback is that you cannot have easy calculations with different quantities (e.g. `1m / 1s` errors on compile-time). Flexibility is very limited.
+
+#### Type 3: [Quantity](https://en.wikipedia.org/wiki/Physical_quantity)-based with operators
+
+Basically the same as the previous type, but with operators that manually define calculations between quantities. This enables calculations such as `1m / 1s = 1m/s`. It also comes with compile-time checking of all implemented calculations, compilation implies correct usage (not the other way around though). A big drawback is that a lot of hard coding is required and abstraction is low.
+
+### Comparison
+
+Library | Author | State | Type | Extendability | Documentation | Platforms | Swift version | Notes
+------- | ------ | ----- | ------ | ------------- | -------------
+SwiftUnits | @infinisil | usable | 1 | easy| no | macOS/iOS/tvOS/watchOS | 3 | class-based
+[MKUnits](https://github.com/michalkonturek/MKUnits) | @michalkonturek | finished | 2 | possible | yes | iOS | 3 |
+[Quantities](https://github.com/BradLarson/Quantities) | @BradLarson | usable | 2 | no | no | macOS/iOS | 3 |
+[Swift Units](https://github.com/danielpi/Swift-Units) | @danielpi | experimental | 3 | hardly | no | macOS | 2.3 |
+[Measurement & Unit](https://developer.apple.com/reference/foundation/unit) | Apple | stable | 2 | possible | yes | macOS/iOS/tvOS/watchOS | 3 |
+
+[continued...]

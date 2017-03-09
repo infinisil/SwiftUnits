@@ -16,7 +16,7 @@ public struct Value : ValueProtocol, CustomStringConvertible {
 	public let value : Double
 	
 	public var description: String {
-		return ["\(value)", "\(dim)"].joined(separator: " ")
+		return "\(value) \(dim)"
 	}
 	
 	public init(value: Double, dim: Dim = Dim()) {
@@ -35,10 +35,25 @@ extension Float : ValueProtocol {
 	public var value: Double { return Double(self) }
 }
 
-extension Int : ValueProtocol {
+extension ValueProtocol where Self : SignedInteger {
 	public var dim : Dim { return .none }
-	public var value : Double { return Double(self) }
+	public var value : Double { return Double(toIntMax()) }
 }
+
+extension ValueProtocol where Self : UnsignedInteger {
+	public var dim : Dim { return .none }
+	public var value : Double { return Double(toUIntMax()) }
+}
+
+extension Int8 : ValueProtocol {}
+extension Int16 : ValueProtocol {}
+extension Int32 : ValueProtocol {}
+extension Int64 : ValueProtocol {}
+
+extension UInt8 : ValueProtocol {}
+extension UInt16 : ValueProtocol {}
+extension UInt32 : ValueProtocol {}
+extension UInt64 : ValueProtocol {}
 
 
 extension ValueProtocol {

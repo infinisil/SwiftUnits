@@ -113,6 +113,8 @@ extension Units {
 	}
 	
 	public enum Mass {
+		public static let g = 0.001 * kg
+		
 		public static let t = 1000 * kg
 		public static let u = 1.660539040e-27 * kg
 		
@@ -172,6 +174,9 @@ extension Units {
 		public static let h = 6.626070040e-34 * J / s
 		/// Reduced planck constant (std uncertainty 1.2e-8)
 		public static let ħ = 1.054571800e-34 * J / s
+		
+		/// Standard gravity constant (exact)
+		public static let g = 9.80665 * m / s**2
 		
 		/// Magnetic constant (exact)
 		public static let µ_0 = 4e-7 * π * N / A**2

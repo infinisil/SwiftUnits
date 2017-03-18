@@ -76,12 +76,10 @@ Basically the same as the previous type, but with operators that manually define
 
 ### Comparison
 
-Library | Author | State | Type | Extendability | Documentation | Platforms | Swift version | Notes
-------- | ------ | ----- | ------ | ------------- | -------------
-SwiftUnits | @infinisil | usable | 1 | easy| no | macOS/iOS/tvOS/watchOS | 3 | class-based
-[MKUnits](https://github.com/michalkonturek/MKUnits) | @michalkonturek | finished | 2 | possible | yes | iOS | 3 |
-[Quantities](https://github.com/BradLarson/Quantities) | @BradLarson | usable | 2 | no | no | macOS/iOS | 3 |
-[Swift Units](https://github.com/danielpi/Swift-Units) | @danielpi | experimental | 3 | hardly | no | macOS | 2.3 |
-[Measurement & Unit](https://developer.apple.com/reference/foundation/unit) | Apple | stable | 2 | possible | yes | macOS/iOS/tvOS/watchOS | 3 |
-
-[continued...]
+| Library | Author | State | Type | Extendability | Documentation | Platforms | Swift version | Notes |
+| ------- | ------ | ----- | ---- | ------------- | ------------- | --------- | ------------- | ----- |
+| SwiftUnits | @infinisil | usable | 1 | easy| no | macOS/iOS/tvOS/watchOS | 3 ||
+| [MKUnits](https://github.com/michalkonturek/MKUnits) | @michalkonturek | finished | 2 | possible | yes | iOS | 3 ||
+| [Quantities](https://github.com/BradLarson/Quantities) | @BradLarson | usable | 2 | no | no | macOS/iOS | 3 ||
+| [Swift Units](https://github.com/danielpi/Swift-Units) | @danielpi | experimental | 3 | hardly | no | macOS | 2.3 ||
+| [Measurement & Unit](https://developer.apple.com/reference/foundation/unit) | Apple | stable | 2 | possible | yes | macOS/iOS/tvOS/watchOS | 3 ||

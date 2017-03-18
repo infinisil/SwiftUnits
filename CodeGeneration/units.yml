@@ -1,0 +1,145 @@
+# Source: https://en.wikipedia.org/wiki/SI_base_value
+dimensions:
+    L: length
+    M: mass
+    T: time
+    I: electric current
+    Θ: thermodynamic temperature
+    N: amount of substance
+    J: luminous intensity
+
+
+# Defaults are:
+# dimension: - (dimensionless)
+# value: 1
+SI:
+    base:
+        m:
+            name: length
+            dimension: L
+        kg:
+            name: kilogram
+            dimension: M
+        s:
+            name: second
+            dimension: T
+        A:
+            name: ampere
+            dimension: I
+        K:
+            name: kelvin
+            dimension: K
+        mol:
+            name: mole
+            dimension: J
+    derived:
+        Hz:
+            name: hertz
+            value: 1/s
+        rad:
+            name: radian
+        sr:
+            name: steradian
+        N:
+            name: newton
+            value: kg*m/s^2
+        Pa:
+            name: pascal
+            value: N/m^2
+        J:
+            name: joule
+            value: N*m
+        W:
+            name: watt
+            value: J/s
+    prefixes:
+        k: 1e3
+        c: 1e-2
+        m: 1e-3
+    accepted for use:
+        min:
+            name: minute
+            value: 60 s
+        h:
+            name: hour
+            value: 60 min
+        d:
+            name: day
+            value: 24 h
+        ha:
+            name: hectare
+            value: 10000 m^2
+        l:
+            name: litre
+            value: 1 dm^3
+
+systems:
+    imperial:
+        th:
+            name: thou
+            value: in/1000
+        in:
+            name: inch
+            value: 0.0254 m
+        ft:
+            name: foot
+            value: 12 in
+        yd:
+            name: yard
+            value: 3 ft
+
+
+# Source: https://en.wikipedia.org/wiki/Physical_quantity
+# https://en.wikipedia.org/wiki/List_of_physical_quantities
+quantities:
+    length:
+        other names: [width, height, depth]
+        unit: m
+        symbols: [a, b, c, d, h, l, r, s, w, x, y, z]
+    time:
+        unit: s
+        symbols: [t, τ]
+    mass:
+        unit: kg
+        symbols: m
+    temperature:
+        unit: K
+        symbols: [T, θ]
+    amount of substance:
+        unit: mol
+        symbols: n
+    electric current:
+        unit: ampere
+        symbols: [i, l] 
+    
+    area:
+        other names: cross-section
+        unit: m^2
+        symbols: [A, S, Ω]
+    velocity:
+        unit: m/s
+        symbols: v
+    gravitational field:
+        other names: [field strength, potential gradient, acceleration]
+        unit: m/s^2
+        symbols: g
+    impulse:
+        unit: kg*m/s
+
+
+
+constants:
+    c:
+        name-en: Speed of light
+        name-de: Lichtgeschwindigkeit
+        value: 299792458
+        value: m/s
+        accuracy: exact
+    π: 3.141592
+    G:
+        name: Gravitational constant
+        value: 6.67408e-11
+        value: m^3/kg/s^2
+        link: "https://en.wikipedia.org/wiki/Gravitational_constant"
+        accuracy: 1.2e-8
+

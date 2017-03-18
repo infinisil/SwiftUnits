@@ -1,0 +1,3 @@
+[submodule "Carthage/Checkouts/YamlSwift"]
+	path = Carthage/Checkouts/YamlSwift
+	url = https://github.com/behrang/YamlSwift.git

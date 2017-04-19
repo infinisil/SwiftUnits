@@ -3,7 +3,7 @@ Framework for working with arbitrary units in Swift (WIP, Name and repo might ch
 
 The aim of this library is to provide a convenient and flexible API to work with [physical units](https://en.wikipedia.org/wiki/Units_of_measurement) such as meters, kilograms, Newton, bar, etc. The final version of this library will also provide a plethora of physical constants in their correct dimensions such as the speed of light in meters per second (length over time), the avogadro constant in mol^-1 and many more.
 
-##Demo
+## Demo
 
 One of the most important types provided by this library is the `Units` type. It contains every present unit and constant as a static property on either itself or one of its subtypes. You can combine any of these units/constants simply by multiplying/dividing them:
 
